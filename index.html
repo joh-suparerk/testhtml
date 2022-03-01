@@ -1,5 +1,15 @@
 <html>
+<head>
+  <script>
+    fetch("./header.html").then(response => {
+      return response.text()
+    }).then(data => {
+      document.querySelector("header").innerHTML = data;
+    })
+  </script>
+</head>
 <body>
-Content.
+  <header></header>
+  Content.
 </body>
 </html>
