@@ -4,7 +4,7 @@
     fetch("./header.html").then(response => {
       return response.text()
     }).then(data => {
-      document.querySelector("header").innerHTML = data;
+      document.querySelector("header1").innerHTML = data;
     })
     fetch("https://api.coinbase.com/v2/prices/BTC-USD/spot").then(response => response.json())
       .then(data => {
@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <header></header>
+  <header1></header1>
   <div>Content.</div>
   <div id="priceText"></div>
   <!-- https://coinlib.io/widgets -->
