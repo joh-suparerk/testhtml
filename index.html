@@ -9,7 +9,7 @@
     fetch("https://api.coinbase.com/v2/prices/BTC-USD/spot").then(response => response.json())
       .then(data => {
       console.log(data);
-      document.getElementById("priceText").innerHTML = data;
+      document.getElementById("priceText").innerHTML = data["data"].amount;
     })
   </script>
 </head>
