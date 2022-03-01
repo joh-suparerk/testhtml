@@ -6,10 +6,16 @@
     }).then(data => {
       document.querySelector("header").innerHTML = data;
     })
+    fetch("https://api.coinbase.com/v2/prices/BTC-USD/spot").then(response => {
+      return response.json()
+    }).then(data => {
+      document.getElementById("priceText").innerHTML = data;
+    })    
   </script>
 </head>
 <body>
   <header></header>
-  Content.
+  <div>Content.</div>
+  <div id="priceText"></div>
 </body>
 </html>
