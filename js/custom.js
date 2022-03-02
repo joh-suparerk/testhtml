@@ -122,14 +122,14 @@ function getPrice() {
 		);
 }
 
-fetch('../loadernav.html').then(response => response.text()).then(data => {
+fetch('../testhtml/loadernav.html').then(response => response.text()).then(data => {
 	document.querySelector("loadernav").innerHTML = data
 })
 
-fetch('../header.html').then(response => response.text()).then(data => {
+fetch('../testhtml/header.html').then(response => response.text()).then(data => {
 	document.querySelector("header").innerHTML = data
 })
 
-fetch('../footer.html').then(response => response.text()).then(data => {
+fetch('../testhtml/footer.html').then(response => response.text()).then(data => {
 	document.querySelector("footer").innerHTML = data
 })
